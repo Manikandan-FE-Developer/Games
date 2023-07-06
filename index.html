@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav Bar</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+<header>
+	<nav class="container">
+		<a href="#" class="logo">LOGO</a>
+		<ul class="navlist">
+			<li class="nav-item">
+				<a href="#">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a href="#">PRICING</a>
+			</li>
+			<li class="nav-item">
+				<a href="#">ABOUT</a>
+			</li>
+			<li class="nav-item">
+				<a href="#">CONTACT</a>
+			</li>
+			<div class="line"></div>
+	    </ul>
+		<div class="menu" onclick="togglemenu(this)">
+			<i class="fas fa-bars menu-btn" onclick="changeIcon(this)"></i>
+		</div>
+	</nav>
+</header>
+<script>
+document.querySelector('.menu').addEventListener('click',function(){
+	document.querySelector('.navlist').classList.toggle('active');
+});
+
+changeIcon = (icon) => icon.classList.toggle('fa-times')
+</script>
+</body>
+</html>
