@@ -22,7 +22,7 @@ header {
 	position: ~webkit-sticky;
 	background-color: #121419;
 }
-.container {
+.navbar {
 	max-width: 98rem;
 	margin-inline: auto;
 	padding-inline: 1.5rem;
@@ -37,6 +37,7 @@ header {
 	list-style: none;
 }
 .nav-item {
+	padding-left: 20px;
 	min-width: 10rem;
 	text-align: center;
 	padding-block: 1rem;
@@ -53,14 +54,30 @@ header {
 	display: none;
 }
 .nav-item:nth-child(2):hover ~ .line {
-	transform: translateX(10rem);
+	transform: translateX(12rem);
 }
 .nav-item:nth-child(3):hover ~ .line {
-	transform: translateX(20rem);
+	transform: translateX(23rem);
 }
 .nav-item:nth-child(4):hover ~ .line {
-	transform: translateX(30rem);
+	transform: translateX(35rem);
 }
+.container{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+	column-gap: 10px;
+}
+.container img{
+	margin-top: 25px;
+	width: 400px;
+	height: 200px;
+	cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+}
+
 @media only screen and (max-width: 1000px){
 	.logo{
 		font-size: 60px;
@@ -83,6 +100,7 @@ header {
   	}
   	.nav-item:hover{
   		color: #121419;
+  		padding: 30px;
   		background-color: white;
   		border-radius: 50px;
   	}
@@ -94,5 +112,14 @@ header {
     }
 	.navlist.active{
 		display: block;
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+	.container img{
+		margin-top: 50px;
+		width: 600px;
+		height: 300px;
 	}
 }
