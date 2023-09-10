@@ -1,7 +1,9 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
 body {
   margin: 0;
-  overflow: hidden;
-  background-image: url(bg.jpg);
+  background-color: #121419;
 }
 .fa{
   color: white;
@@ -11,10 +13,20 @@ body {
   left: 0;
   top: 0;
 }
+h1{
+  color: white;
+  text-align: center;
+}
+.container{
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 #game-container {
   width: 100vw;
   height: 100vh;
   position: relative;
+  margin-top: -80px;
 }
 #player {
   width: 60px;
@@ -31,7 +43,7 @@ body {
 .obstacle {
   width: 50px;
   height: 50px;
-  background-image: url(download.jpeg);
+  background-color: red;
   position: absolute;
 }
 #heart-container {
@@ -44,8 +56,6 @@ body {
   width: 20px;
   height: 20px;
   padding: 5px;
-  object-fit: contain;
-  mix-blend-mode: color;
 }
 #score {
   position: absolute;
@@ -60,7 +70,22 @@ body {
 }
 @media only screen and (max-width: 1000px){
   .fa{
-      font-size: 60px;
-      padding: 40px 0 0 40px;
+    font-size: 60px;
+    padding: 40px 0 0 40px;
+  }
+  h1{
+    font-size: 60px;
+  }
+  .container{
+    margin-top: 450px;
+  }
+  #game-container{
+    height: 450px;
+  }
+  #heart-container{
+    margin-top: 500px;
+  }
+  #score{
+    margin-top: 500px;
   }
 }
