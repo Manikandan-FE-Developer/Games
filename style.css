@@ -9,8 +9,8 @@ html {
 body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.6rem;
-	color: #fff;
-	background-color: #1a1d24;
+	color: white;
+	background-color: #121419;
 }
 a {
 	text-decoration: none;
@@ -20,7 +20,7 @@ header {
 	top: 0;
 	position: sticky;
 	position: ~webkit-sticky;
-	background-color: #121419;
+	background-color: black;
 }
 .navbar {
 	max-width: 98rem;
