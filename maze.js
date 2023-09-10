@@ -9,38 +9,32 @@ const bd = document.getElementById("bd");
 const bl = document.getElementById("bl");
 const br = document.getElementById("br");
 
-const step = 20;
-const size = 20;
-const bwidth = 2;
-const mazeHeight = 200;
-const mazeWidth = 300;
+const step = 40;
+const size = 40;
+const bwidth = 4;
+const mazeHeight = 400;
+const mazeWidth = 600;
 let nogoX = [];
 let nogoX2 = [];
 let nogoY = [];
 let nogoY2 = [];
 let prevDist = mazeWidth * 2;
 
-//tilt vars
 let lastUD = 0;
 let lastLR = 0;
 const mThreshold = 15;
 let firstMove = true;
 let allowTilt = true;
 
-//swipe vars
 const sThreshold = 15;
 
-//scroll vars
 const scThreshold = 20;
 
-//generate sides and starting position
 genSides();
 
-//define size
 let my = mazeHeight / step;
 let mx = mazeWidth / step;
 
-//create full grid
 let grid = [];
 for (let i = 0; i < my; i++) {
   let sg = [];
