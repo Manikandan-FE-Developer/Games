@@ -1,0 +1,105 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #121419;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.fa{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background-color: #333;
+    border: 2px solid white;
+}
+.paddle {
+    position: absolute;
+    bottom: 10px;
+    left: 260px;
+    width: 80px;
+    height: 10px;
+    background-color: #fff;
+}
+.ball {
+    position: absolute;
+    bottom: 30px;
+    left: 290px;
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    border-radius: 50%;
+}
+.block {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: #0f0;
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.lives {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+}
+.score {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    color: #fff;
+}
+button{
+    display: none;
+}
+@media only screen and (max-width: 1000px){
+    .fa{
+        font-size: 60px;
+        padding: 40px 0 0 40px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .game-container{
+        width: 700px;
+        height: 1000px;
+    }
+    .paddle {
+        width: 150px;
+        height: 20px;
+    }
+    .ball {
+        width: 40px;
+        height: 40px;
+    }
+    .block {
+        width: 60px;
+        height: 20px;
+        padding-right: 300px;
+        padding-bottom: 200px;
+        margin-top: 5px;
+    }
+    .lives {
+        font-size: 30px;
+    }
+    .score {
+        font-size: 30px;
+        top: 50px;
+    }
+}
